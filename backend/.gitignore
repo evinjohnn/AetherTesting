@@ -1,0 +1,42 @@
+# Node.js specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment variables
+# .env.development
+# .env.production
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor-specific
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Optional npm cache directory
+.npm/
+
+# Miscellaneous
+*.tgz
+*.gzip
+
+# Coverage directory
+coverage/
+
+# Temporary files
+*.tmp
+*.temp

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tigrid Contact</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .header h1 {
+            color: #007BFF;
+            margin: 10px 0;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            font-size: 20px;
+            text-align: justify;
+            line-height: 1.8;
+            margin: 20px 0;
+            animation: drop 1.5s ease;
+        }
+
+        .content p {
+            font-size: 20px;
+            text-align: justify;
+            line-height: 1.8;
+            margin: 20px 0;
+            animation: drop 1.5s ease;
+        }
+
+        .content a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="email-header">
+            <div class="header">
+                <img src="https://res.cloudinary.com/ddwwzpsgm/image/upload/v1717557479/xbsb1rp795iq6aaaupkx.png"
+                    alt="Tigrid Technologies Logo">
+                <h1>New Enquiry Received</h1>
+            </div>
+        </header>
+        <div class="content">
+            <p>A new enquiry has been received from {{name}}.</p>
+            <p>Enquiry Details:</p>
+            <ul>
+                <li><strong>Name:</strong> {{name}}</li>
+                <li><strong>Email:</strong> {{email}}</li>
+                <li><strong>Phone:</strong> {{phone}}</li>
+                <li><strong>Message:</strong> {{message}}</li>
+            </ul>
+            <p>Please review the enquiry and respond to the customer as soon as possible.</p>
+            <p>You can contact the customer at:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:{{email}}">{{email}}</a></li>
+                <li><strong>Phone:</strong> {{phone}}</li>
+            </ul>
+        </div>
+        <footer class="footer">
+            &copy; 2024 Tigrid Technologies Pvt Ltd.
+        </footer>
+    </div>
+</body>
+</html>
